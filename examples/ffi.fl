@@ -1,0 +1,8 @@
+let m = ffi_load("/lib/x86_64-linux-gnu/libm.so.6")
+print("2^10 =", ffi_call(m, "pow", "F", ["F", "F"], [2.0, 10.0]))
+print("sqrt(81) =", ffi_call(m, "sqrt", "F", ["F"], [81.0]))
+
+let c = ffi_load("/lib/x86_64-linux-gnu/libc.so.6")
+let r = ffi_call(c, "puts", "I", ["S"], ["hello from C!"])
+print("puts returned", r)
+print("abs(-42) =", ffi_call(c, "abs", "I", ["I"], [-42]))

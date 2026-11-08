@@ -1,0 +1,48 @@
+# Forge demo
+
+fn fib(n) {
+    if n < 2 {
+        return n
+    }
+    return fib(n - 1) + fib(n - 2)
+}
+
+print("fib(10) =", fib(10))
+
+let total = 0
+for i in [1, 2, 3, 4, 5] {
+    total = total + i
+}
+print("total =", total)
+
+let x = 10
+while x > 0 {
+    x = x - 1
+}
+print("x =", x)
+
+fn make_counter() {
+    let count = 0
+    fn counter() {
+        count = count + 1
+        return count
+    }
+    return counter
+}
+
+let c = make_counter()
+print("counter:", c(), c(), c())
+
+let words = ["hello", " ", "world"]
+let joined = words[0] + words[1] + words[2]
+print(joined)
+print("len =", len(joined))
+print("last char =", joined[len(joined) - 1])
+
+if 3 > 2 and not (1 == 2) {
+    print("logic ok")
+} elif false {
+    print("nope")
+} else {
+    print("nope2")
+}

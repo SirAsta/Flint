@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024" role="img" aria-label="Flint">
+  <rect width="1536" height="1024" fill="#191917"/>
+  <g fill="#F2EBE0" transform="translate(400 330)">
+    <path d="M150 0 C186 46 188 98 150 140 C118 176 84 206 56 232 C26 260 6 296 8 336 C0 300 2 260 26 226 C48 194 78 170 106 144 C138 114 168 62 150 0 Z"/>
+    <path d="M56 236 C86 224 118 222 150 232 L196 244 C192 270 176 286 150 292 L108 302 C86 308 62 330 52 360 C40 328 40 292 56 236 Z"/>
+  </g>
+  <text x="700" y="565" fill="#F2EBE0" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="248" font-weight="500" letter-spacing="-8">flint</text>
+</svg>

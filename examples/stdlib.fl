@@ -1,0 +1,26 @@
+let total = 0
+for i in range(1, 6) {
+    total = total + i
+}
+print("sum 1..5 =", total)
+
+for i in range(0, 10, 2) {
+    print("even:", i)
+}
+
+print("down:", range(5, 0, -1))
+
+let nums = [10, 20, 30]
+append(nums, 40)
+print("after append:", nums)
+let last = pop(nums)
+print("popped:", last)
+print("now:", nums)
+
+print("negative index:", nums[-1], nums[-2])
+
+let squares = []
+for i in range(5) {
+    append(squares, i * i)
+}
+print("squares:", squares)

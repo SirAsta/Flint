@@ -1,0 +1,32 @@
+class Animal {
+    fn init(name, sound) {
+        this.name = name
+        this.sound = sound
+    }
+    fn speak() {
+        print(this.name, "says", this.sound)
+    }
+    fn rename(new_name) {
+        this.name = new_name
+    }
+}
+
+let dog = Animal("Rex", "woof")
+dog.speak()
+dog.rename("Buster")
+dog.speak()
+
+class Counter {
+    fn init() {
+        this.n = 0
+    }
+    fn next() {
+        this.n = this.n + 1
+        return this.n
+    }
+}
+
+let c1 = Counter()
+let c2 = Counter()
+print("c1:", c1.next(), c1.next(), c1.next())
+print("c2:", c2.next())

@@ -1,0 +1,15 @@
+[package]
+name = "flint"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "flint"
+path = "src/main.rs"
+
+[lib]
+name = "flint"
+path = "src/lib.rs"
+
+[dependencies]
+libloading = "0.8"

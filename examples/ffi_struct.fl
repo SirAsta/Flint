@@ -1,0 +1,13 @@
+let lib = ffi_load("./examples/libpoint.so")
+
+let p = ffi_alloc(16)
+ffi_write_f64(p, 0, 3.0)
+ffi_write_f64(p, 8, 4.0)
+print("dist(3, 4) =", ffi_call(lib, "dist", "F", ["I"], [p]))
+
+ffi_call(lib, "fill", "V", ["I"], [p])
+print("after fill: x =", ffi_read_f64(p, 0), "y =", ffi_read_f64(p, 8))
+
+print("read str at null =", ffi_read_str(p))
+ffi_free(p)
+print("freed")

@@ -1,0 +1,28 @@
+let msg = "  Hello World  "
+
+print(msg.strip())
+print(msg.upper())
+print(msg.lower())
+print(msg.strip().upper())
+
+let csv = "a,b,c,d"
+let parts = csv.split(",")
+print(parts)
+print(parts.len())
+print(parts.pop())
+print(parts)
+
+let words = ["hello", "world"]
+words.append("!")
+print(words.join())
+print(words)
+
+print("name: {}".replace("{}", "Flint"))
+print("apple banana apple".replace("apple", "orange"))
+
+let nums = [1, 2, 3]
+print(nums.len())
+nums.append(4)
+print(nums)
+print(nums.pop())
+print(nums)

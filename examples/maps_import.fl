@@ -1,0 +1,19 @@
+import "examples/math.fl"
+
+print("PI =", PI)
+print("double(21) =", double(21))
+
+let person = {"name": "Ada", "age": 36, "active": true}
+print(person["name"], person["age"], person["active"])
+
+person["city"] = "London"
+print("has city:", has(person, "city"))
+print("keys:", keys(person))
+
+for k in person {
+    print(k, "=", person[k])
+}
+
+let nums = [1, 2, 3]
+nums[0] = 99
+print("nums:", nums)
